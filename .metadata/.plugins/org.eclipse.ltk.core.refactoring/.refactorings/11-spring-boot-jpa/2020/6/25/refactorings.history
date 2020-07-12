@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.ashokit.repositories&apos; to &apos;12-spring-boot-data-pagination/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;11-spring-boot-jpa&apos;&#x0D;&#x0A;- Destination element: &apos;12-spring-boot-data-pagination/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;11-spring-boot-jpa/src/main/java/com.ashokit.repositories&apos;" description="Copy package" destination="=12-spring-boot-data-pagination/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ashokit.repositories" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1592476110311" version="1.0"/>
+</session>

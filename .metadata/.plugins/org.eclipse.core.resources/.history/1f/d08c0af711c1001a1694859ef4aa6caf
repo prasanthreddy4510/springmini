@@ -1,0 +1,41 @@
+package com.ashokit.controllers;
+
+import javax.websocket.server.PathParam;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController(value="/course")
+public class WelcomeToRest {
+
+	@GetMapping("/rest/{cname}")
+	public String welcome(@PathVariable("cname")String name) {
+		if(("java").equals(name)) {
+			return "course duration of "+name+"is 45 days";
+		}
+		return "please visit wikipedia.com";
+	}
+	
+	@GetMapping("/timings/{cid}/{cname}")
+	public String timings(@PathParam("cid")int id,@PathParam("cname")String name) {
+		if((id==12)&&("java").equals(name)) {
+			return "please visit java website";
+		}
+		else if(("python").equals(name)&&(id==11)) {
+			return "please dont do this course";
+		}
+		else
+			return "please visit quora";
+	}
+	
+	@GetMapping("course/{cname}/fastrack/{tname}")
+	public String fastract(@PathParam("cname")String cname,
+			               @PathParam("tname")String tname) {
+		if(("java").equals(cname)&&("ashok").equals(tname)) {
+			return "yes it is a fastrack";
+		}
+		else 
+			return "No this is not a fastrack";
+	}
+}

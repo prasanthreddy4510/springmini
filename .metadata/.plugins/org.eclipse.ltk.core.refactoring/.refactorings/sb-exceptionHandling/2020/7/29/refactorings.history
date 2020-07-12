@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;sb-exceptionHandling/src/main/webapp/views/greer.jsp&apos; to &apos;greet.jsp&apos;" description="Rename resource &apos;greer.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/views/greer.jsp" name="greet.jsp" stamp="1594536536702" updateReferences="true"/>
+</session>

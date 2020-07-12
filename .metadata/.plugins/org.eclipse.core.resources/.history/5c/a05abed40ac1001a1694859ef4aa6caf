@@ -1,0 +1,14 @@
+package com.ashokit.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeToRest {
+
+	@GetMapping("/rest")
+	public String welcome() {
+		String msg="welcome to rest";
+		return msg;
+	}
+}

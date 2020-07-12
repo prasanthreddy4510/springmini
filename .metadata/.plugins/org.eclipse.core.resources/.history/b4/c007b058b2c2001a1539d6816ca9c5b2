@@ -1,0 +1,9 @@
+package com.ashokit.controllers;
+
+@RestController
+public class OrderDetailsController {
+
+	public OrderDetails order() {
+		
+	}
+}

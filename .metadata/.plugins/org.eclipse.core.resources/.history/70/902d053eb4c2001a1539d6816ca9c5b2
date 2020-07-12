@@ -1,0 +1,18 @@
+package com.ashokit.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ashokit.entity.OrderDetails;
+
+@RestController
+public class OrderDetailsController {
+
+	@GetMapping(value= {"/order/{ordn}"})
+	public OrderDetails order(@PathVariable("ordn")String orderNumber) {
+		
+		return null;
+		
+	}
+}

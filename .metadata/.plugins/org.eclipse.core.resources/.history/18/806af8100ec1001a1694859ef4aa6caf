@@ -1,0 +1,18 @@
+package com.ashokit.controllers;
+
+import javax.websocket.server.PathParam;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController(value="/couse")
+public class WelcomeToRest {
+
+	@GetMapping("/rest/{cname}")
+	public String welcome(@PathParam("cname")String name) {
+		if(("java").equals(name)) {
+			return "course duration of "+name+"is 45 days";
+		}
+		return "please visit wikipedia.com";
+	}
+}

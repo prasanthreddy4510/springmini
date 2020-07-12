@@ -1,0 +1,15 @@
+package com.ashokit.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+@Controller
+public class WelcomeException {
+	
+	public String welcome(Model model) {
+		String str="hello Greetings!!!...";
+		model.addAttribute("msg",str);
+		return "greet";
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.ashokit.controller;
+
+import java.util.Date;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+@Controller
+public class DateController {
+
+	public String dateDisplay(Model model) {
+		model.addAttribute("date","current date is ::"+new Date());
+		return "greet";
+	}
+}
