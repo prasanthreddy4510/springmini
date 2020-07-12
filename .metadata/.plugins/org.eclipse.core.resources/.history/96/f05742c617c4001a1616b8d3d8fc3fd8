@@ -18,7 +18,6 @@ public class OrderDetailsController {
 		if("11-22-4233".equals(orderNumber)) {
 		orderDetails.setOrderDate(date);
 		orderDetails.setOrderTotal(1335.51);
-		System.out.println("hello.....");
 		}
 		else if("22-333".equals(orderNumber)) {
 			orderDetails.setOrderDate(date);
